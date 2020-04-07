@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wujun.demostart.mapper.DetailMapper">
+    <resultMap id="detailResult" type="com.wujun.demostart.entity.Detail">
+        <id property="transId" column="trans_id"></id>
+        <result property="custId" column="cust_id"></result>
+        <result property="account" column="account"></result>
+        <result property="cardNbr" column="card_nbr"></result>
+        <result property="tranno" column="tranno"></result>
+        <result property="monthNbr" column="month_bnr"></result>
+        <result property="bill" column="bill"></result>
+        <result property="transType" column="trans_type"></result>
+        <result property="txnDatetime" column="txn_datetime"></result>
+    </resultMap>
+    <!--查询所有明细-->
+    <select id="SelectAllDetails" resultMap="detailResult" resultType="Detail">
+        select * from detail
+    </select>
+    <!--条件模糊查询-->
+    <select id="selectDetailFuzzySerch" resultMap="detailResult" resultType="Detail">
+        select * from detail where 1=1
+            <if test="custId!=null and custId!=''">
+                and cust_id = #{custId}
+            </if>
+            <if test="account!=null and account!=''">
+                and account = #{account}
+            </if>
+            <if test="cardNbr!=null and cardNbr!=''">
+                and card_nbr like #{cardNbr}"%"
+            </if>
+            <if test="tranno!=null and tranno!=''">
+                and tranno = #{tranno}
+            </if>
+
+            <if test="monthNbr!=null and monthNbr!=''">
+                and month_bnr = #{monthNbr}
+            </if>
+            <if test="bill!=null and bill!=''">
+                and bill like "%"#{bill}
+            </if>
+            <if test="transType!=null and transType!=''" >
+                and trans_type = #{transType}
+            </if>
+
+
+    </select>
+    <!--根据transId查询-->
+    <select id="selectDetailByTransId" resultMap="detailResult" parameterType="Integer">
+        select * from detail where trans_id = #{transId}
+    </select>
+    <!--插入一条详细信息-->
+    <insert id="insertDetail" parameterType="Detail">
+        insert  into detail(trans_id,cust_id,account,card_nbr,tranno,month_bnr,bill,trans_type,txn_datetime) values (#{transId},#{custId},#{account},#{cardNbr},#{tranno},#{monthNbr},#{bill},#{transType},#{txnDatetime})
+    </insert>
+    <!--根据transId删除明细-->
+    <delete id="deleteDetailByTransId" parameterType="Integer">
+        delete from detail where trans_id = #{transId}
+    </delete>
+    <!--根据transId更新明细信息-->
+    <update id="updateDetailByTransId" parameterType="Detail">
+         update detail set cust_id=#{custId},account=#{account},card_nbr=#{cardNbr},tranno=#{tranno},month_bnr=#{monthNbr},bill=#{bill},trans_type=#{transType},txn_datetime=#{txnDatetime} where trans_id =#{transId}
+    </update>
+
+</mapper>

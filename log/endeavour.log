@@ -1,0 +1,67 @@
+2019-12-06 15:24:58.667 - INFO  [           main] bstractTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.wujun.demostart.controller.CustomerControllerTest], using SpringBootContextLoader
+2019-12-06 15:24:58.780 - INFO  [           main] .s.t.c.s.AbstractContextLoader : Could not detect default resource locations for test class [com.wujun.demostart.controller.CustomerControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-12-06 15:24:58.794 - INFO  [           main] tationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.wujun.demostart.controller.CustomerControllerTest]: CustomerControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-12-06 15:24:59.130 - INFO  [           main] ingBootTestContextBootstrapper : Found @SpringBootConfiguration com.wujun.demostart.DemostartApplication for test class com.wujun.demostart.controller.CustomerControllerTest
+2019-12-06 15:24:59.293 - INFO  [           main] bstractTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2019-12-06 15:24:59.348 - INFO  [           main] bstractTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@27305e6, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1ef3efa8, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@502f1f4c, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6f8f9349, org.springframework.test.context.support.DirtiesContextTestExecutionListener@75c9e76b, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7446d8d5, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5c3b6c6e, org.springframework.test.context.event.EventPublishingTestExecutionListener@4fbda97b, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@75f5fd58, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@37b70343, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@306851c7, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@12bcd0c0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4879f0f2]
+2019-12-06 15:24:59.984 - INFO  [           main] o.s.b.StartupInfoLogger        : Starting CustomerControllerTest on LAPTOP-OJ7UBKRI with PID 19096 (started by 52762 in D:\IdeaWorkplace\demostart)
+2019-12-06 15:24:59.988 - INFO  [           main] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
+2019-12-06 15:25:01.984 - INFO  [           main] egate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-06 15:25:04.178 - INFO  [           main] edRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-06 15:25:05.025 - INFO  [           main] cumentationPluginsBootstrapper : Context refreshed
+2019-12-06 15:25:05.172 - INFO  [           main] cumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-12-06 15:25:05.274 - INFO  [           main] w.s.ApiListingReferenceScanner : Scanning for api listing references
+2019-12-06 15:25:05.707 - INFO  [           main] o.s.b.StartupInfoLogger        : Started CustomerControllerTest in 6.302 seconds (JVM running for 12.025)
+2019-12-06 15:25:06.223 - INFO  [           main] c.z.h.HikariDataSource         : DatebookHikariCP - Starting...
+2019-12-06 15:25:07.001 - INFO  [           main] c.z.h.HikariDataSource         : DatebookHikariCP - Start completed.
+2019-12-06 15:25:07.405 - INFO  [extShutdownHook] c.z.h.HikariDataSource         : DatebookHikariCP - Shutdown initiated...
+2019-12-06 15:25:07.588 - INFO  [extShutdownHook] c.z.h.HikariDataSource         : DatebookHikariCP - Shutdown completed.
+2019-12-06 15:25:54.790 - INFO  [           main] o.s.b.StartupInfoLogger        : Starting DemostartApplication on LAPTOP-OJ7UBKRI with PID 14348 (D:\IdeaWorkplace\demostart\target\classes started by 52762 in D:\IdeaWorkplace\demostart)
+2019-12-06 15:25:54.799 - INFO  [           main] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
+2019-12-06 15:25:55.751 - INFO  [           main] egate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-06 15:25:56.074 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8888 (http)
+2019-12-06 15:25:56.082 - INFO  [           main] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8888"]
+2019-12-06 15:25:56.083 - INFO  [           main] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
+2019-12-06 15:25:56.084 - INFO  [           main] o.a.j.l.DirectJDKLog           : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-12-06 15:25:56.206 - INFO  [           main] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
+2019-12-06 15:25:56.207 - INFO  [           main] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1375 ms
+2019-12-06 15:25:56.855 - INFO  [           main] edRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-06 15:25:57.072 - INFO  [           main] cumentationPluginsBootstrapper : Context refreshed
+2019-12-06 15:25:57.090 - INFO  [           main] cumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-12-06 15:25:57.126 - INFO  [           main] w.s.ApiListingReferenceScanner : Scanning for api listing references
+2019-12-06 15:25:57.367 - INFO  [           main] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8888"]
+2019-12-06 15:25:57.394 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8888 (http) with context path ''
+2019-12-06 15:25:57.397 - INFO  [           main] o.s.b.StartupInfoLogger        : Started DemostartApplication in 2.949 seconds (JVM running for 6.564)
+2019-12-06 15:26:09.137 - INFO  [nio-8888-exec-1] o.a.j.l.DirectJDKLog           : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-06 15:26:09.138 - INFO  [nio-8888-exec-1] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
+2019-12-06 15:26:09.150 - INFO  [nio-8888-exec-1] o.s.w.s.FrameworkServlet       : Completed initialization in 11 ms
+2019-12-06 15:26:09.182 - WARN  [nio-8888-exec-1] o.s.w.s.DispatcherServlet      : No mapping for GET /all
+2019-12-06 15:26:09.306 - WARN  [nio-8888-exec-2] o.s.w.s.DispatcherServlet      : No mapping for GET /favicon.ico
+2019-12-06 15:26:13.150 - WARN  [nio-8888-exec-3] o.s.w.s.DispatcherServlet      : No mapping for GET /
+2019-12-06 15:32:01.231 - INFO  [           main] o.s.b.StartupInfoLogger        : Starting DemostartApplication on LAPTOP-OJ7UBKRI with PID 6952 (D:\IdeaWorkplace\demostart\target\classes started by 52762 in D:\IdeaWorkplace\demostart)
+2019-12-06 15:32:01.231 - INFO  [           main] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
+2019-12-06 15:32:02.434 - INFO  [           main] egate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-06 15:32:02.731 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8888 (http)
+2019-12-06 15:32:02.747 - INFO  [           main] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8888"]
+2019-12-06 15:32:02.747 - INFO  [           main] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
+2019-12-06 15:32:02.747 - INFO  [           main] o.a.j.l.DirectJDKLog           : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-12-06 15:32:02.825 - INFO  [           main] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
+2019-12-06 15:32:02.825 - INFO  [           main] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1531 ms
+2019-12-06 15:32:03.450 - INFO  [           main] edRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-06 15:32:03.637 - INFO  [           main] cumentationPluginsBootstrapper : Context refreshed
+2019-12-06 15:32:03.653 - INFO  [           main] cumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-12-06 15:32:03.699 - INFO  [           main] w.s.ApiListingReferenceScanner : Scanning for api listing references
+2019-12-06 15:32:03.903 - INFO  [           main] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8888"]
+2019-12-06 15:32:03.918 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8888 (http) with context path ''
+2019-12-06 15:32:03.918 - INFO  [           main] o.s.b.StartupInfoLogger        : Started DemostartApplication in 3.439 seconds (JVM running for 8.392)
+2019-12-06 15:32:25.037 - INFO  [nio-8888-exec-1] o.a.j.l.DirectJDKLog           : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-06 15:32:25.037 - INFO  [nio-8888-exec-1] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
+2019-12-06 15:32:25.048 - INFO  [nio-8888-exec-1] o.s.w.s.FrameworkServlet       : Completed initialization in 11 ms
+2019-12-06 15:32:25.064 - WARN  [nio-8888-exec-1] o.s.w.s.DispatcherServlet      : No mapping for GET /
+2019-12-06 15:32:25.175 - WARN  [nio-8888-exec-2] o.s.w.s.DispatcherServlet      : No mapping for GET /favicon.ico
+2019-12-06 15:32:35.651 - WARN  [nio-8888-exec-4] o.s.w.s.DispatcherServlet      : No mapping for GET /all
+2019-12-06 15:32:46.564 - INFO  [nio-8888-exec-6] c.z.h.HikariDataSource         : DatebookHikariCP - Starting...
+2019-12-06 15:32:46.722 - INFO  [nio-8888-exec-6] c.z.h.HikariDataSource         : DatebookHikariCP - Start completed.
+2019-12-06 15:32:57.054 - WARN  [nio-8888-exec-8] o.s.w.s.DispatcherServlet      : No mapping for GET /
+2019-12-06 15:33:39.855 - WARN  [nio-8888-exec-1] o.s.w.s.DispatcherServlet      : No mapping for GET /
+2019-12-06 15:33:43.819 - WARN  [nio-8888-exec-2] o.s.w.s.DispatcherServlet      : No mapping for GET /

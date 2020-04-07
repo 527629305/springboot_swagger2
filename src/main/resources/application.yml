@@ -1,0 +1,12 @@
+#日志配置
+logging:
+  config: classpath:log4j2.yml
+mybatis:
+  mapper-locations: classpath:mapping/*.xml
+  type-aliases-package: com.wujun.demostart.entity
+
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
+  support-methods-arguments: true
+  params:
